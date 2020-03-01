@@ -8,6 +8,10 @@ class PolyTreeNode
         @children = []
     end
 
+    def inspect
+        "Value: #{@value} Children: #{@children}"
+    end
+
     def parent=(new_parent)
         @parent.children.delete(self) if @parent != nil
         @parent = new_parent
