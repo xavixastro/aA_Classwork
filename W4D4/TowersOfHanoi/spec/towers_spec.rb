@@ -1,0 +1,3 @@
+require 'towers'
+require 'rspec'
+
