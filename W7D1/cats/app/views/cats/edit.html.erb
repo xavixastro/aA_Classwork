@@ -1,0 +1,45 @@
+<h1>Create New Cat</h1>
+
+<form action = "<%= cat_url(@single_cat.id) %>" method='POST'>
+
+    <input type="hidden" name="_method" value="PATCH">
+
+    <label>Name:
+        <input type='text' name='cat[name]' value='<%=@single_cat.name%>'>
+    </label>
+    <br>
+    <label>SEX:
+        <input type='radio' name='cat[sex]' value = 'M' <%= @single_cat.sex == 'M'? 'checked' : '' %>> Male
+        <input type='radio' name='cat[sex]' value = 'F' <%= @single_cat.sex == 'F'? 'checked' : '' %>> Female
+    </label>
+    <br>
+    <label>Color:
+        <select name='cat[color]' >
+            <option <%= @single_cat.color == 'Red'? 'selected' : '' %>> Red</option>
+            <option <%= @single_cat.color == 'Orange'? 'selected' : '' %>>Orange</option>
+            <option <%= @single_cat.color == 'Yellow'? 'selected' : '' %>>Yellow</option>
+            <option <%= @single_cat.color == 'Green'? 'selected' : '' %>>Green</option>
+            <option <%= @single_cat.color == 'Blue'? 'selected' : '' %>>Blue</option>
+            <option <%= @single_cat.color == 'Purple'? 'selected' : '' %>>Purple</option>
+            <option <%= @single_cat.color == 'Black'? 'selected' : '' %>>Black</option>
+            <option <%= @single_cat.color == 'White'? 'selected' : '' %>>White</option>
+        </select>
+    </label>
+    <br>
+    <label>Date:
+        <input type='date' name='cat[birth_date]' value='<%=@single_cat.birth_date %>' >
+    </label>
+    <br>
+    <br>
+
+    <label>Description:
+        <textarea name='cat[description]'>
+            <%=@single_cat.description%>
+        </textarea>
+    </label>
+
+    <br>
+    <br>
+
+    <button type="submit"> Update Cat </button>
+</form>
