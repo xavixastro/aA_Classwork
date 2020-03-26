@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Band Information</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Name:</td>
+            <td><%= @band.name %></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+
+<a href="<%= edit_band_url(@band) %>">Edit</a>
+<form action="<%= band_url(@band) %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Delete</button>
+</form>
+<br>
+<br>
+<a href="<%= bands_url %>">Back to All Bands</a>
