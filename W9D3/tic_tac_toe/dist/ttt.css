@@ -1,0 +1,21 @@
+.ttt > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    list-style-type:none;
+}
+
+li {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+li:hover{
+    background-color: yellow;
+}
