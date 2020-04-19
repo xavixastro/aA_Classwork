@@ -1,0 +1,93 @@
+.clock {
+    font-family: 'Black Ops One', cursive;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgb(185, 185, 69);
+    border: 2px solid black;
+    padding: 10px 40px;
+}
+
+.clock p {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.tabs {
+    margin: 20px auto;
+    width: 500px;
+}
+
+.tabs ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs ul h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    width: 33%;
+    text-align: center;
+    background-color: lightblue;
+    border: 2px solid black;    
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+#selected {
+    border-bottom: 30px;
+}
+
+.tabs ul h1:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.tabs article {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color: black;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.autocomplete {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(224, 135, 150);
+    color: white;
+    border: 2px solid black;
+    padding: 10px 10px;   
+}
+
+.autocomplete ul {
+    list-style: square;
+    list-style-position: inside;
+    padding: 20px 0;
+}
+
+.autocomplete input {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.autocomplete ul li{
+    text-align: center;
+}
