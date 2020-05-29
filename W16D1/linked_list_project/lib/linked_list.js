@@ -143,6 +143,8 @@ class LinkedList {
     // TODO: Implement the insert method here
     insert(index, val) {
         if (index < 0 || index >= this.length) return false;
+        if (index === this.length) return !!this.addToTail(val);
+        if (index === 0) return !!this.addToHead(val);
         
 
         let node = new Node(val);
